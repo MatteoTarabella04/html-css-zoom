@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,4 +10,28 @@
     --bgc-darkgrey: #4a4a4a;
     --f-green: #4bc800;
     --btn-red: #e6161b;
+}
+
+body {
+    background-color: var(--bgc-darker);
+}
+
+.container {
+    max-width: 1152px;
+    width: 70%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col {
+    width: calc(100% / 14 * 2);
+}
+
+img {
+    max-width: 100%;
+    padding: 0.2rem;
 }
