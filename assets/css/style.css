@@ -22,6 +22,10 @@ body {
     margin: auto;
 }
 
+.flex {
+    display: flex;
+}
+
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -34,4 +38,12 @@ body {
 img {
     max-width: 100%;
     padding: 0.2rem;
+}
+
+.vew {
+    margin: 1rem 0.3rem;
+}
+
+#app-header {
+    justify-content: flex-end;
 }
