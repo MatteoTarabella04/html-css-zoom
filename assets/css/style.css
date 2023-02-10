@@ -8,42 +8,66 @@
     --bgc-darker: #000000;
     --bgc-dark-f: #222222;
     --bgc-darkgrey: #4a4a4a;
+    --bgc-darkgrey-trp: #4a4a4aab;
     --f-green: #4bc800;
     --btn-red: #e6161b;
 }
-
-body {
+ body {
     background-color: var(--bgc-darker);
-}
+ }
 
-.container {
-    max-width: 1152px;
-    width: 70%;
-    margin: auto;
-}
+ .btn {
+    background-color: var(--bgc-darkgrey);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    border-width: 0;
+    margin: 0.25rem;
+ }
 
 .flex {
     display: flex;
 }
+/* header */
+#app-header {
+    height: 50px;
+    text-align: end;
+}
 
-.row {
+
+
+
+/* main */
+#app-main {
+    height: calc(100vh - 120px);
+}
+
+.users {
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    justify-content: center;
+    overflow-y: auto;
 }
 
-.col {
-    width: calc(100% / 14 * 2);
+.user {
+    position: relative;
+    width: 250px;
+    height: 150px;
 }
 
-img {
-    max-width: 100%;
-    padding: 0.2rem;
+.name  {
+    position: absolute;
+    bottom: 0.25rem;
+    left: 0;
+    padding: 0.25rem;
+    color: white;
+    background-color: var(--bgc-darkgrey-trp);
 }
 
-.vew {
-    margin: 1rem 0.3rem;
-}
 
-#app-header {
-    justify-content: flex-end;
-}
+/* footer */
+#app-footer {
+    height: 70px;
+    background-color: var(--bgc-dark-f);
+ }
