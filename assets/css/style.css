@@ -12,29 +12,33 @@
     --f-green: #4bc800;
     --btn-red: #e6161b;
 }
- body {
-    background-color: var(--bgc-darker);
- }
 
- .btn {
+body {
+    background-color: var(--bgc-darker);
+}
+
+i {
+    color: white;
+}
+
+.btn {
     background-color: var(--bgc-darkgrey);
     color: white;
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     border-width: 0;
     margin: 0.25rem;
- }
+}
 
 .flex {
     display: flex;
 }
+
 /* header */
 #app-header {
     height: 50px;
     text-align: end;
 }
-
-
 
 
 /* main */
@@ -56,7 +60,7 @@
     height: 150px;
 }
 
-.name  {
+.name {
     position: absolute;
     bottom: 0.25rem;
     left: 0;
@@ -70,4 +74,30 @@
 #app-footer {
     height: 70px;
     background-color: var(--bgc-dark-f);
- }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-left,
+.foot-center,
+.foot-right {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.foot-left,
+.foot-center,
+.foot-right span {
+    color: white;
+    font-size: 12px;
+    padding: 0.25rem;
+}
+
+.foot-left .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
